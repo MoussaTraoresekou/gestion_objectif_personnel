@@ -2,8 +2,6 @@ package util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
-
 public class DatabaseConnection {
 	// ============================================
     // CHAQUE MEMBRE MODIFIE CES 3 LIGNES
@@ -12,53 +10,30 @@ public class DatabaseConnection {
     // src/main/java/util/DatabaseConnection.java
     // ============================================
 
-    private static final String URL =  "jdbc:mysql://localhost:3306/gestion_objectif_ye";
-    private static final String USER = "root";
-    private static final String PASSWORD = "saq32397";
-    private static Connection connection;
+	  private static final String URL =
+	            "jdbc:mysql://localhost:3306/gestion_objectifs";
 
-    private DatabaseConnection() {
-    }
+	    private static final String USER =
+	            "root";
 
-    public static Connection getConnection() {
+	    private static final String PASSWORD =
+	            "123456"; // mets 123456 si ton MySQL a ce mot de passe
 
-        try {
+	    public static Connection getConnection() {
+	        try {
+	            Class.forName("com.mysql.cj.jdbc.Driver");
 
-            if (connection == null || connection.isClosed()) {
+	            return DriverManager.getConnection(
+	                    URL,
+	                    USER,
+	                    PASSWORD
+	            );
 
-                connection =DriverManager.getConnection(
-                                URL,
-                                USER,
-                                PASSWORD
-                        );
-
-               // System.out.println(" Connexion à la base de données réussie !");
-            }
-
-            return connection;
-
-        } catch (SQLException e) {
-
-            System.err.println("Erreur de connexion à la base de données !" );
-
-            throw new RuntimeException("Impossible de se connecter à MySQL.",e);
-        }
-    }
-
-    public static void closeConnection() {
-
-        try {
-
-            if (connection != null && !connection.isClosed()) {
-
-                connection.close();
-
-                System.out.println( " Connexion fermée.");
-            }
-
-        } catch (SQLException e) {
-
-            System.err.println("Erreur fermeture connexion : " + e.getMessage());
-        }
-    }
+	        } catch (Exception e) {
+	            throw new RuntimeException(
+	                    "Impossible de se connecter à MySQL.",
+	                    e
+	            );
+	        }
+	    }
 }
