@@ -1,12 +1,4 @@
-/* ══════════════════════════════════════
-   DASHBOARD UTILISATEUR N'KA — user-dashboard.js
-   ══════════════════════════════════════ */
-
 document.addEventListener('DOMContentLoaded', function () {
-
-  /* ────────────────────────────────────
-     1. SIDEBAR TOGGLE
-  ──────────────────────────────────── */
   const sidebar     = document.getElementById('sidebar');
   const mainContent = document.getElementById('mainContent');
   const toggleBtn   = document.getElementById('toggleBtn');
@@ -20,9 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
       : 'bi bi-layout-sidebar-reverse';
   });
 
-  /* ────────────────────────────────────
-     2. NAV ACTIVE LINK
-  ──────────────────────────────────── */
   document.querySelectorAll('.nav-item-link').forEach(function (link) {
     link.addEventListener('click', function (e) {
       e.preventDefault();
@@ -31,9 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ────────────────────────────────────
-     3. CHECKBOX ACTIONS DU JOUR
-  ──────────────────────────────────── */
   document.querySelectorAll('.action-item .form-check-input').forEach(function (checkbox) {
     checkbox.addEventListener('change', function () {
       const item = this.closest('.action-item');
@@ -45,9 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ────────────────────────────────────
-     4. FILTRE OBJECTIFS (Tous / Sport / Économie …)
-  ──────────────────────────────────── */
   const filterBtn = document.getElementById('filterBtn');
   const filterMenu = document.getElementById('filterMenu');
 

@@ -16,9 +16,6 @@
 </head>
 <body>
 
-<!-- ═══════════════════════════════════════
-     SIDEBAR
-═══════════════════════════════════════ -->
 <aside class="sidebar" id="sidebar">
 
   <!-- Logo -->
@@ -89,12 +86,8 @@
 
 </aside>
 
-<!-- ═══════════════════════════════════════
-     MAIN CONTENT
-═══════════════════════════════════════ -->
 <main class="main-content" id="mainContent">
 
-  <!-- ── TOPBAR ── -->
   <div class="topbar">
     <div class="topbar-greeting">
       <h2>Bonjour, Idrissa 👋</h2>
@@ -109,7 +102,6 @@
     </div>
   </div>
 
-  <!-- ── STAT CARDS ── -->
   <div class="row g-3 mb-4">
 
     <div class="col-6 col-md-3">
@@ -158,7 +150,6 @@
 
   </div><!-- /row stat cards -->
 
-  <!-- ── OBJECTIFS + PANEL DROIT ── -->
   <div class="row g-3 mb-4">
 
     <!-- Aperçu des objectifs -->
@@ -239,7 +230,6 @@
       </div>
     </div>
 
-    <!-- Panel droit -->
     <div class="col-12 col-lg-5 d-flex flex-column gap-3">
 
       <!-- Actions du jour -->
@@ -283,11 +273,10 @@
         </div>
       </div>
 
-    </div><!-- /col panel droit -->
+    </div>
 
-  </div><!-- /row objectifs -->
+  </div>
 
-  <!-- ── STATISTIQUES ── -->
   <div class="page-section-title">Statistiques</div>
   <div class="row g-3">
 
@@ -321,7 +310,7 @@
       </div>
     </div>
 
-  </div><!-- /row statistiques -->
+  </div>
 
 </main>
 
