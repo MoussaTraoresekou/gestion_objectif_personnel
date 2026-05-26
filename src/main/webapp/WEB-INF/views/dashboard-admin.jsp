@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/dashboard-admin.css"/></head>
 <body>
 
-<!-- ═══════════════ SIDEBAR ═══════════════ -->
 <aside class="sidebar" id="sidebar">
 
   <div class="sidebar-logo">
@@ -58,7 +57,6 @@
   </div>
 </aside>
 
-<!-- ═══════════════ MAIN ═══════════════ -->
 <div class="main-content" id="mainContent">
 
   <!-- TOPBAR -->
@@ -200,7 +198,6 @@
       </div>
     </div>
 
-    <!-- ── UTILISATEURS RÉCENTS + ACTIVITÉ ── -->
     <div class="row g-3 mb-4">
 
       <!-- Table utilisateurs -->
@@ -324,7 +321,6 @@
       </div>
     </div>
 
-    <!-- ── GRAPHIQUE + OBJECTIFS POPULAIRES ── -->
     <div class="row g-3">
 
       <!-- Graphique croissance -->

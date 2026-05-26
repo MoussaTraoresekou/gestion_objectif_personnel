@@ -10,9 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ══════════════════
-   SIDEBAR
-   ══════════════════ */
 .sidebar {
   width: 200px;
   min-height: 100vh;
@@ -125,9 +122,7 @@ body {
   transition: padding .3s;
 }
 
-/* ══════════════════
-   MAIN CONTENT
-   ══════════════════ */
+
 .main-content {
   margin-left: 200px;
   flex: 1;
@@ -137,7 +132,6 @@ body {
 }
 .main-content.collapsed { margin-left: 62px; }
 
-/* ── TOPBAR ── */
 .topbar {
   display: flex; align-items: center;
   justify-content: space-between;
@@ -218,7 +212,6 @@ body {
   display: flex; align-items: center; gap: 4px;
 }
 
-/* ── OBJECTIVE ITEMS ── */
 .obj-item {
   display: flex; align-items: center; gap: 14px;
   padding: 13px 0;
@@ -249,7 +242,6 @@ body {
 
 .obj-pct { font-size: 13px; font-weight: 700; color: #1a1a2e; min-width: 38px; text-align: right; }
 
-/* ── RIGHT PANEL CARDS ── */
 .actions-card, .reminders-card {
   background: #fff; border-radius: 14px;
   padding: 18px 20px;
@@ -265,7 +257,6 @@ body {
 }
 .voir-toutes:hover { text-decoration: underline; }
 
-/* Action items */
 .action-item {
   display: flex; align-items: center; gap: 10px;
   padding: 7px 0; font-size: 13.5px; color: #333;
@@ -279,7 +270,6 @@ body {
   background-color: #7c4dff; border-color: #7c4dff;
 }
 
-/* Reminder items */
 .reminder-item {
   display: flex; align-items: flex-start; justify-content: space-between;
   padding: 10px 0; border-bottom: 1px solid #f2f2f7;
@@ -294,7 +284,6 @@ body {
   white-space: nowrap; margin-top: 2px;
 }
 
-/* ── BOTTOM STAT CARDS ── */
 .stat-bottom-card {
   background: #fff; border-radius: 14px;
   padding: 18px 22px;
@@ -309,13 +298,11 @@ body {
 .stat-bottom-info .lbl { font-size: 11.5px; color: #aaa; margin-bottom: 3px; }
 .stat-bottom-info .val { font-size: 20px; font-weight: 700; color: #1a1a2e; }
 
-/* ── SECTION HEADER ── */
 .page-section-title {
   font-size: 15px; font-weight: 700; color: #1a1a2e;
   margin-bottom: 14px;
 }
 
-/* ── FILTER DROPDOWN ── */
 .filter-menu {
   display: none;
   position: absolute;

@@ -11,13 +11,11 @@ toggleBtn.addEventListener('click', () => {
     : 'bi bi-layout-sidebar-reverse';
 });
  
-/* ── Chart toggle button ── */
 function setActive(btn) {
   document.querySelectorAll('.chart-toggle-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
 }
- 
-/* ── Growth Chart ── */
+
 const ctx = document.getElementById('growthChart').getContext('2d');
  
 const labels = ['Lun','Mar','Mer','Jeu','Ven','Sam','Dim'];
